@@ -1,0 +1,19 @@
+{
+  "files.eol": "\n",
+  "files.associations": {
+    "*.jsx": "javascript"
+  },
+  "editor.tabSize": 2,
+  "eslint.enable": true,
+  "eslint.autoFixOnSave": true,
+  // Format a file on save. A formatter must be available, the file must not be auto-saved, and editor must not be shutting down.
+  "editor.formatOnSave": true,
+  "javascript.format.enable": false,
+  "javascript.validate.enable": false,
+  "typescript.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.tslint": true
+  },
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all"
+}

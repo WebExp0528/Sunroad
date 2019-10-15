@@ -1,0 +1,46 @@
+.sunroad-logo {
+  height: 46px;
+}
+
+.footer-description {
+  position: fixed !important;
+  bottom: 0px;
+  padding-top: 0px !important;
+  width: 100%;
+  background-color: black;
+  z-index: 10000;
+}
+
+.footer-description .sunroad-terms:nth-child(1) {
+  border-top: 1px solid #e6eaee;
+  padding-top: 24px;
+}
+
+.footer-description .sunroad-terms {
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+}
+
+.sidebar,
+.sidebar-nav {
+  width: 300px !important;
+}
+
+.sidebar .nav {
+  width: 300px !important;
+}
+
+.profile-logo {
+  width: 200px;
+  height: 200px;
+}
+
+.main {
+  margin-left: 300px !important;
+}
+
+.app-body {
+  margin-bottom: 87px;
+}

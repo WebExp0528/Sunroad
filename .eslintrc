@@ -1,0 +1,11 @@
+{
+  "root": true,
+  "extends": ["plugin:vue/recommended", "standard"],
+
+  "rules": {
+    "vue/max-attributes-per-line": 3,
+    "no-unused-vars": 0,
+    "no-undef": 0,
+    "semi": 0
+  }
+}
