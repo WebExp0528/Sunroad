@@ -137,7 +137,7 @@ const routes = [
 
   {
     path: '/',
-    component: LayoutFront,
+    component: LayoutBasic,
     meta: { requiresAuth: true },
     children: [
       {

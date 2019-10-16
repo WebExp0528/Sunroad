@@ -5,7 +5,7 @@
         <img
           id="logo-desk"
           src="/assets/img/logo-desk.png"
-          alt="Laraspace Logo"
+          alt="Sunroad Logo"
           class="hidden-sm-down"
         >
       </a>

@@ -17,8 +17,5 @@ export default {
   components: {
     SiteHeader, SiteSidebar, SiteFooter
   },
-  mounted () {
-    this.$utils.setLayout('default')
-  }
 }
 </script>

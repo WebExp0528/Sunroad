@@ -77,7 +77,7 @@ class AuthAPIController extends AppBaseController
 
         try {
             if (! $token = JWTAuth::attempt($credentials)) {
-                return response()->json(['error' => 'invalid_credentialsaasdf'], 401);
+                return response()->json(['error' => 'invalid_credential'], 401);
             }
         } catch (JWTException $e) {
             return response()->json(['error' => 'could_not_create_token'], 500);
@@ -116,6 +116,62 @@ class AuthAPIController extends AppBaseController
             return response()->json($e->getMessage(), 401);
         }
         return response()->json(['message' => 'Log out success'], 200);
+    }
+
+    public function emailExist(Request $request){
+        $user = DB::table('users')->where('email', $request->email)->first();
+        if($user){
+            return response(['isExist' => true]);
+        }
+        return response(['isExist' => false]);
+    }
+
+    public function register(Request $request)
+    {
+
+        if(Setting::get('mail_verification') == 'off')
+        {
+            $mail_verification = 1;
+        }
+        else
+        {
+            $mail_verification = null;
+        }
+
+        //Create user record
+        $user = User::create([
+            'firstName'         => $request->firstName,
+            'lastName'          => $request->lastName,
+            'displayName'       => $request->displayName,
+            'email'             => $request->email,
+            'password'          => bcrypt($request->password),
+            'verification_code' => str_random(30),
+            'timeline_id' => 1,
+            'remember_token'    => str_random(30),
+            'email_verified'    => $mail_verification
+        ]);
+
+        if (Setting::get('mail_verification') == 'on') {
+            $chk = 'on';
+            Mail::send('emails.welcome', ['user' => $user], function ($m) use ($user) {
+                $m->from(Setting::get('noreply_email'), Setting::get('site_name'));
+
+                $m->to($user->email, $user->name)->subject('Welcome to '.Setting::get('site_name'));
+            });
+
+            return response()->json(['message' => trans('auth.verify_email')], 403);
+        }
+
+        $credentials = $request->only('email', 'password');
+        try {
+            if (! $token = JWTAuth::attempt($credentials)) {
+                return response()->json(['error' => 'invalid_credential'], 401);
+            }
+        } catch (JWTException $e) {
+            return response()->json(['error' => 'could_not_create_token'], 500);
+        }
+
+        return response()->json(compact('token'));
     }
 
 //     //Add email to mailchimp list

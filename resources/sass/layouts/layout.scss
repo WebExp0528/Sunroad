@@ -66,6 +66,7 @@
 }
 
 .site-footer {
+  z-index:10000;
   position: fixed !important;
   bottom: 0px;
   padding-top: 0px !important;
@@ -116,7 +117,6 @@
 
 .template-container {
   height: 100%;
-  background-image: url('/images/1.jpg');
 }
 
 //Layout Horizontal

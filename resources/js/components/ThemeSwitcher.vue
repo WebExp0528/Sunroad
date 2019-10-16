@@ -45,7 +45,7 @@ export default {
       if (skin.light === true) {
         this.$utils.setLogo('/assets/img/logo_white.png')
       } else {
-        this.$utils.setLogo('/assets/img/logo-desk.png')
+        this.$utils.setLogo('/images/sunroad_logo-04.png')
       }
     }
   }

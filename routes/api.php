@@ -91,6 +91,11 @@ Route::group(['prefix' => 'auth'], function () {
     Route::post('register','AuthAPIController@register');
     Route::get('logout','AuthAPIController@logout');
     Route::get('check','AuthAPIController@check');
+    Route::post('email-exist','AuthAPIController@emailExist');
+});
+
+Route::group(['prefix' => 'public'], function () {
+    Route::get('get-creative-fields','PublicAPIController@getCreativeFields');
 });
 
 // admin route

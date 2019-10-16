@@ -6,6 +6,58 @@
       </div>
       <div class="card-body">
         <form @submit.prevent="validateBeforeSubmit">
+          <div :class="['form-group', {'is-invalid': $v.registerData.firstName.$error}]">
+            <input
+              :class="{'is-invalid': $v.registerData.firstName.$error, 'form-group--loading': $v.registerData.firstName.$pending}"
+              v-model.trim.lazy="registerData.firstName"
+              class="form-control"
+              placeholder="Enter Firstname"
+              type="text"
+              @change="$v.registerData.firstName.$touch()"
+            >
+            <span v-if="!$v.registerData.firstName.required" class="invalid-feedback">
+              Firstname is required.
+            </span>
+          </div>
+          <div :class="['form-group', {'is-invalid': $v.registerData.lastName.$error}]">
+            <input
+              :class="{'is-invalid': $v.registerData.lastName.$error, 'form-group--loading': $v.registerData.lastName.$pending}"
+              v-model.trim.lazy="registerData.lastName"
+              class="form-control"
+              placeholder="Enter Lastname"
+              type="text"
+              @change="$v.registerData.lastName.$touch()"
+            >
+            <span v-if="!$v.registerData.lastName.required" class="invalid-feedback">
+              Lastname is required.
+            </span>
+          </div>
+          <div :class="['form-group', {'is-invalid': $v.registerData.displayName.$error}]">
+            <input
+              :class="{'is-invalid': $v.registerData.displayName.$error, 'form-group--loading': $v.registerData.displayName.$pending}"
+              v-model.trim.lazy="registerData.displayName"
+              class="form-control"
+              placeholder="Enter Display Name"
+              type="text"
+              @change="$v.registerData.displayName.$touch()"
+            >
+            <span v-if="!$v.registerData.displayName.required" class="invalid-feedback">
+              DisplayName is required.
+            </span>
+          </div>
+          <!-- <div :class="['form-group', {'is-invalid': $v.registerData.creativeField.$error}]">
+            <input
+              :class="{'is-invalid': $v.registerData.creativeField.$error, 'form-group--loading': $v.registerData.creativeField.$pending}"
+              v-model.trim.lazy="registerData.creativeField"
+              class="form-control"
+              placeholder="Select Creative Field"
+              type="text"
+              @change="$v.registerData.creativeField.$touch()"
+            >
+            <span v-if="!$v.registerData.creativeField.required" class="invalid-feedback">
+              Creative Filed is required.
+            </span>
+          </div> -->
           <div :class="['form-group', {'is-invalid': $v.registerData.email.$error}]">
             <input
               :class="{'is-invalid': $v.registerData.email.$error, 'form-group--loading': $v.registerData.email.$pending}"
@@ -76,6 +128,10 @@ export default {
   data () {
     return {
       registerData: {
+        firstName:'',
+        lastName:'',
+        displayName:'',
+        creativeField:'',
         email: '',
         password: '',
         password_confirmation: ''
@@ -84,6 +140,18 @@ export default {
   },
   validations: {
     registerData: {
+      firstName:{
+        required
+      },
+      lastName:{
+        required
+      },
+      displayName:{
+        required
+      },
+      // creativeField:{
+      //   required
+      // },
       password: {
         required,
         minLength: minLength(6)
@@ -99,8 +167,8 @@ export default {
           if (value === '') return true
 
           // simulate async call, fail for all logins with even length
-          let response = await window.axios.post('/api/email-exist', { email: value })
-          return response.data
+          let response = await window.axios.post('/api/auth/email-exist', { email: value })
+          return !response.data.isExist
         }
       }
     }
@@ -109,7 +177,12 @@ export default {
     validateBeforeSubmit () {
       this.$v.$touch()
       if (!this.$v.$error) {
-        alert('Regitered success')
+        Auth.register(this.registerData).then((res) => {
+          console.log(res)
+          if (res) {
+            this.$router.push('/')
+          }
+        })
       }
     }
   }

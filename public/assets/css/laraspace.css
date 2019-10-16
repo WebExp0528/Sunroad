@@ -22864,6 +22864,7 @@ code,
 }
 
 .site-footer {
+  z-index: 10000;
   position: fixed !important;
   bottom: 0px;
   padding-top: 0px !important;
@@ -22912,7 +22913,6 @@ code,
 
 .template-container {
   height: 100%;
-  background-image: url("/images/1.jpg");
 }
 
 @media (max-width: 767px) {
@@ -23105,8 +23105,7 @@ code,
 }
 
 .brand-main img {
-  height: 25px;
-  padding-top: 6px;
+  height: 32px;
 }
 
 .nav-toggle {
@@ -23209,7 +23208,6 @@ code,
 
   .brand-main img {
     height: 32px;
-    padding-top: 4px;
   }
 }
 
