@@ -40,7 +40,7 @@ use JWTAuth;
 use Tymon\JWTAuth\Exceptions\JWTException;
 
 /**
- * Class UserController.
+ * Class AuthAPIController.
  */
 class AuthAPIController extends AppBaseController
 {

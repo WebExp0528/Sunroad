@@ -36,7 +36,7 @@ use Cmgmyr\Messenger\Models\Thread;
 
 
 /**
- * Class UserController.
+ * Class PublicAPIController.
  */
 class PublicAPIController extends AppBaseController
 {
@@ -49,7 +49,7 @@ class PublicAPIController extends AppBaseController
     }
 
     /**
-     * API for User login
+     * API for getting Creative_fields
      * 
      */
     public function getCreativeFields(Request $request)

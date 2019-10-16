@@ -94,11 +94,16 @@ Route::group(['prefix' => 'auth'], function () {
     Route::post('email-exist','AuthAPIController@emailExist');
 });
 
+// public route
 Route::group(['prefix' => 'public'], function () {
     Route::get('get-creative-fields','PublicAPIController@getCreativeFields');
 });
 
-// admin route
+// user route
 Route::group(['prefix' => 'users', 'middleware' => 'jwt.verify'], function (){
+    Route::get('get-user','UsersAPIController@getUser');
+});
 
+Route::group(['prefix'=>'posts', 'middleware' => 'jwt.verify'], function (){
+    Route::get('/get-posts',  'PostsAPIController@getPosts');
 });

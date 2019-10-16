@@ -36,7 +36,6 @@ export default {
   async logout () {
     try {
       await axios.get('/api/auth/logout');
-
       Ls.remove('auth.token');
       toastr['success']('Logged out!', 'Success');
     } catch (error) {

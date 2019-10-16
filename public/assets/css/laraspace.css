@@ -162,7 +162,7 @@ pre[class*="language-"] {
   --primary: #007dcc;
   --secondary: #333;
   --success: #4fc47f;
-  --info: #5BBFDE;
+  --info: #5bbfde;
   --warning: #f0ad4e;
   --danger: #f35a3d;
   --light: #f8f8f8;
@@ -3173,8 +3173,8 @@ fieldset:disabled a.btn {
 
 .btn-info {
   color: #212529;
-  background-color: #5BBFDE;
-  border-color: #5BBFDE;
+  background-color: #5bbfde;
+  border-color: #5bbfde;
 }
 
 .btn-info:hover {
@@ -3192,8 +3192,8 @@ fieldset:disabled a.btn {
 .btn-info.disabled,
 .btn-info:disabled {
   color: #212529;
-  background-color: #5BBFDE;
-  border-color: #5BBFDE;
+  background-color: #5bbfde;
+  border-color: #5bbfde;
 }
 
 .btn-info:not(:disabled):not(.disabled):active,
@@ -3486,14 +3486,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-info {
-  color: #5BBFDE;
-  border-color: #5BBFDE;
+  color: #5bbfde;
+  border-color: #5bbfde;
 }
 
 .btn-outline-info:hover {
   color: #212529;
-  background-color: #5BBFDE;
-  border-color: #5BBFDE;
+  background-color: #5bbfde;
+  border-color: #5bbfde;
 }
 
 .btn-outline-info:focus,
@@ -3504,7 +3504,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-info.disabled,
 .btn-outline-info:disabled {
-  color: #5BBFDE;
+  color: #5bbfde;
   background-color: transparent;
 }
 
@@ -3512,8 +3512,8 @@ fieldset:disabled a.btn {
 .btn-outline-info:not(:disabled):not(.disabled).active,
 .show > .btn-outline-info.dropdown-toggle {
   color: #212529;
-  background-color: #5BBFDE;
-  border-color: #5BBFDE;
+  background-color: #5bbfde;
+  border-color: #5bbfde;
 }
 
 .btn-outline-info:not(:disabled):not(.disabled):active:focus,
@@ -5925,7 +5925,7 @@ a.badge-success.focus {
 
 .badge-info {
   color: #212529;
-  background-color: #5BBFDE;
+  background-color: #5bbfde;
 }
 
 a.badge-info:hover,
@@ -7594,7 +7594,7 @@ button.bg-success:focus {
 }
 
 .bg-info {
-  background-color: #5BBFDE !important;
+  background-color: #5bbfde !important;
 }
 
 a.bg-info:hover,
@@ -7709,7 +7709,7 @@ button.bg-dark:focus {
 }
 
 .border-info {
-  border-color: #5BBFDE !important;
+  border-color: #5bbfde !important;
 }
 
 .border-warning {
@@ -11598,7 +11598,7 @@ a.text-success:focus {
 }
 
 .text-info {
-  color: #5BBFDE !important;
+  color: #5bbfde !important;
 }
 
 a.text-info:hover,
@@ -20326,12 +20326,10 @@ button.toast-close-button {
 }
 
 .skin-tyrell .site-header .action-list li a {
-  background-color: #fff;
   color: #333;
 }
 
 .skin-tyrell .site-header .action-list li a:hover {
-  background-color: #f2f2f2;
   color: #333;
 }
 
@@ -20810,12 +20808,10 @@ button.toast-close-button {
 }
 
 .skin-arryn .site-header .action-list li a {
-  background-color: #fff;
   color: #333;
 }
 
 .skin-arryn .site-header .action-list li a:hover {
-  background-color: #f2f2f2;
   color: #333;
 }
 
@@ -21279,7 +21275,7 @@ button.toast-close-button {
 }
 
 .skin-targaryen .site-header .nav-toggle {
-  background-color: #343A52;
+  background-color: #343a52;
   color: #fff;
 }
 
@@ -21293,17 +21289,15 @@ button.toast-close-button {
 }
 
 .skin-targaryen .site-header .action-list li a {
-  background-color: #343A52;
   color: #fff;
 }
 
 .skin-targaryen .site-header .action-list li a:hover {
-  background-color: #485071;
   color: #fff;
 }
 
 .skin-targaryen .site-header .dropdown-menu {
-  background-color: #343A52;
+  background-color: #343a52;
 }
 
 .skin-targaryen .site-header .notification-dropdown .dropdown-header {
@@ -21324,7 +21318,7 @@ button.toast-close-button {
 }
 
 .skin-targaryen .sidebar-left {
-  background-color: #343A52;
+  background-color: #343a52;
 }
 
 .skin-targaryen .side-nav .collapse-group .collapse-group-item a {
@@ -21358,7 +21352,7 @@ button.toast-close-button {
 }
 
 .skin-targaryen .header-bottom {
-  background-color: #343A52;
+  background-color: #343a52;
 }
 
 .skin-targaryen .header-nav li a {
@@ -21401,8 +21395,8 @@ button.toast-close-button {
 }
 
 .skin-targaryen .tabs-component.tabs-default .tabs-component-tab.is-active {
-  border: 1px solid #343A52;
-  background: #343A52;
+  border: 1px solid #343a52;
+  background: #343a52;
   color: #fff;
 }
 
@@ -21411,15 +21405,15 @@ button.toast-close-button {
 }
 
 .skin-targaryen .tabs-component.tabs-default .tabs-component-tab:hover {
-  border: 1px solid #343A52;
+  border: 1px solid #343a52;
 }
 
 .skin-targaryen .tabs-component.tabs-default .tabs-component-panels {
-  border-top: 1px solid #343A52 !important;
+  border-top: 1px solid #343a52 !important;
 }
 
 .skin-targaryen .tabs-component.tabs-vertical .tabs-component-tabs {
-  border-right: 1px solid #343A52 !important;
+  border-right: 1px solid #343a52 !important;
 }
 
 .skin-targaryen .tabs-component.tabs-vertical .tabs-component-tabs .tabs-component-tab a,
@@ -21428,7 +21422,7 @@ button.toast-close-button {
 }
 
 .skin-targaryen .tabs-component.tabs-vertical .tabs-component-tabs .tabs-component-tab.is-active {
-  background: #343A52;
+  background: #343a52;
 }
 
 .skin-targaryen .tabs-component.tabs-vertical .tabs-component-tabs .tabs-component-tab.is-active a {
@@ -21436,7 +21430,7 @@ button.toast-close-button {
 }
 
 .skin-targaryen .tabs-component.tabs-vertical .tabs-component-tabs .tabs-component-tab:hover {
-  border: 1px solid #343A52;
+  border: 1px solid #343a52;
 }
 
 .skin-targaryen .tabs-component.tabs-simple .tabs-component-tabs .tabs-component-tab a {
@@ -21449,7 +21443,7 @@ button.toast-close-button {
 }
 
 .skin-targaryen .tabs-component.tabs-simple .tabs-component-tabs .tabs-component-tab.is-active {
-  border-bottom: 3px solid #343A52;
+  border-bottom: 3px solid #343a52;
   color: #fff;
 }
 
@@ -21470,24 +21464,24 @@ button.toast-close-button {
 }
 
 .skin-targaryen .tabs-component.tabs-simple-vertical .tabs-component-tabs .tabs-component-tab.is-active {
-  border-right: 3px solid #343A52;
-  color: #343A52;
+  border-right: 3px solid #343a52;
+  color: #343a52;
 }
 
 .skin-targaryen code,
 .skin-targaryen .code {
   background-color: #f8f8f8;
-  color: #343A52;
+  color: #343a52;
 }
 
 .skin-targaryen mark,
 .skin-targaryen .mark {
-  background-color: #343A52;
+  background-color: #343a52;
   color: #fff;
 }
 
 .skin-targaryen .todo-container {
-  background-color: #343A52 !important;
+  background-color: #343a52 !important;
   color: #fff !important;
 }
 
@@ -21496,7 +21490,7 @@ button.toast-close-button {
 }
 
 .skin-targaryen .vue-dropzone .dz-preview .dz-details {
-  background-color: #343A52 !important;
+  background-color: #343a52 !important;
   color: #fff !important;
 }
 
@@ -21535,7 +21529,7 @@ button.toast-close-button {
 
 .skin-targaryen .dropdown-group .dropdown-container {
   color: #c5c9da;
-  background-color: #343A52;
+  background-color: #343a52;
   border: 1px solid #202433;
 }
 
@@ -21569,8 +21563,8 @@ button.toast-close-button {
 
 .skin-targaryen .btn-theme {
   color: #fff;
-  background-color: #343A52;
-  border-color: #343A52;
+  background-color: #343a52;
+  border-color: #343a52;
   -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
   -ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -21593,8 +21587,8 @@ button.toast-close-button {
 .skin-targaryen .btn-theme.disabled,
 .skin-targaryen .btn-theme:disabled {
   color: #fff;
-  background-color: #343A52;
-  border-color: #343A52;
+  background-color: #343a52;
+  border-color: #343a52;
 }
 
 .skin-targaryen .btn-theme:not(:disabled):not(.disabled):active,
@@ -21613,14 +21607,14 @@ button.toast-close-button {
 }
 
 .skin-targaryen .btn-theme-outline {
-  color: #343A52;
-  border-color: #343A52;
+  color: #343a52;
+  border-color: #343a52;
 }
 
 .skin-targaryen .btn-theme-outline:hover {
   color: #fff;
-  background-color: #343A52;
-  border-color: #343A52;
+  background-color: #343a52;
+  border-color: #343a52;
 }
 
 .skin-targaryen .btn-theme-outline:focus,
@@ -21631,7 +21625,7 @@ button.toast-close-button {
 
 .skin-targaryen .btn-theme-outline.disabled,
 .skin-targaryen .btn-theme-outline:disabled {
-  color: #343A52;
+  color: #343a52;
   background-color: transparent;
 }
 
@@ -21639,8 +21633,8 @@ button.toast-close-button {
 .skin-targaryen .btn-theme-outline:not(:disabled):not(.disabled).active,
 .show > .skin-targaryen .btn-theme-outline.dropdown-toggle {
   color: #fff;
-  background-color: #343A52;
-  border-color: #343A52;
+  background-color: #343a52;
+  border-color: #343a52;
 }
 
 .skin-targaryen .btn-theme-outline:not(:disabled):not(.disabled):active:focus,
@@ -21651,11 +21645,11 @@ button.toast-close-button {
 }
 
 .skin-targaryen .form-control:focus {
-  border: 1px solid #343A52;
+  border: 1px solid #343a52;
 }
 
 .skin-targaryen .multiselect .multiselect__option--highlight {
-  background: #343A52;
+  background: #343a52;
   color: #fff;
 }
 
@@ -21679,12 +21673,12 @@ button.toast-close-button {
 }
 
 .skin-targaryen .multiselect .multiselect__tags-wrap .multiselect__tag {
-  background: #343A52;
+  background: #343a52;
   color: #fff;
 }
 
 .skin-targaryen .multiselect .multiselect__tags-wrap .multiselect__tag .multiselect__tag-icon:hover {
-  background: #343A52;
+  background: #343a52;
 }
 
 .skin-targaryen .multiselect .multiselect__tags-wrap .multiselect__tag .multiselect__tag-icon::after {
@@ -21694,12 +21688,12 @@ button.toast-close-button {
 .skin-targaryen .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).day:hover,
 .skin-targaryen .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month:hover,
 .skin-targaryen .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year:hover {
-  border: 1px solid #343A52 !important;
+  border: 1px solid #343a52 !important;
 }
 
 .skin-targaryen .vdp-datepicker__calendar .cell.selected {
   color: #fff;
-  background: #343A52 !important;
+  background: #343a52 !important;
 }
 
 .skin-targaryen .vdp-datepicker__calendar .cell.highlighted {
@@ -21712,7 +21706,7 @@ button.toast-close-button {
 }
 
 .skin-targaryen .VueCarousel-dot.VueCarousel-dot--active .VueCarousel-dot-button {
-  background: #343A52 !important;
+  background: #343a52 !important;
 }
 
 .skin-targaryen .mailbox .mailbox-content .table tr td .content-subject {
@@ -21724,13 +21718,13 @@ button.toast-close-button {
 }
 
 .skin-targaryen .mailbox .mailbox-content .mailbox-content-footer .active .page-link {
-  background-color: #343A52;
-  border-color: #343A52;
+  background-color: #343a52;
+  border-color: #343a52;
   color: #fff;
 }
 
 .skin-targaryen .mailbox .mailbox-content .btn-favorite .active {
-  color: #343A52;
+  color: #343a52;
 }
 
 .skin-targaryen .mailbox-modal .mail-body .message-heading.email a {
@@ -21738,7 +21732,7 @@ button.toast-close-button {
 }
 
 .skin-targaryen .mailbox .mailbox-sidebar .sidebar-menu li.active {
-  border-left: 5px solid #343A52;
+  border-left: 5px solid #343a52;
 }
 
 .skin-targaryen .mailbox .mailbox-sidebar .sidebar-menu li a {
@@ -21757,11 +21751,11 @@ button.toast-close-button {
 }
 
 .skin-lannister {
-  background-color: #EDF0F5;
+  background-color: #edf0f5;
 }
 
 .skin-lannister .site-header {
-  background-color: #3B4350;
+  background-color: #3b4350;
   border-bottom: 1px solid rgba(230, 230, 230, 0.7);
 }
 
@@ -21780,12 +21774,10 @@ button.toast-close-button {
 }
 
 .skin-lannister .site-header .action-list li a {
-  background-color: #fff;
   color: #333;
 }
 
 .skin-lannister .site-header .action-list li a:hover {
-  background-color: #f2f2f2;
   color: #333;
 }
 
@@ -21795,7 +21787,7 @@ button.toast-close-button {
 
 .skin-lannister .site-header .notification-dropdown .dropdown-header {
   border-bottom: 1px solid #bababa;
-  color: #3B4350;
+  color: #3b4350;
 }
 
 .skin-lannister .site-header .dropdown-divider {
@@ -21803,11 +21795,11 @@ button.toast-close-button {
 }
 
 .skin-lannister .header-nav .dropdown-group.dropdown-group.active > .dropdown-activator > a {
-  color: #3B4350;
+  color: #3b4350;
 }
 
 .skin-lannister .header-nav .dropdown-group.has-child.toggle-arrow.active > .dropdown-activator::after {
-  border-color: #3B4350 transparent transparent;
+  border-color: #3b4350 transparent transparent;
 }
 
 .skin-lannister .sidebar-left {
@@ -21823,7 +21815,7 @@ button.toast-close-button {
 }
 
 .skin-lannister .side-nav .collapse-group .collapse-group-item.active > .collapse-item-title > a {
-  color: #3B4350;
+  color: #3b4350;
 }
 
 .skin-lannister .side-nav .collapse-group .collapse-group-item .collapse-group-items {
@@ -21839,7 +21831,7 @@ button.toast-close-button {
 }
 
 .skin-lannister .side-nav .collapse-group .collapse-group-item .collapse-group-items a.active {
-  color: #3B4350;
+  color: #3b4350;
   background-color: #ebebeb;
 }
 
@@ -21858,24 +21850,24 @@ button.toast-close-button {
 }
 
 .skin-lannister .header-nav li.active > a {
-  color: #3B4350;
+  color: #3b4350;
   background-color: transparent;
 }
 
 .skin-lannister .header-nav li.active > a:hover {
-  color: #3B4350;
+  color: #3b4350;
   background-color: transparent;
 }
 
 .skin-lannister .header-nav li .dropdown-item.active {
-  color: #3B4350;
+  color: #3b4350;
   background-color: transparent;
 }
 
 .skin-lannister .header-nav li .dropdown-item.active:hover,
 .skin-lannister .header-nav li .dropdown-item.active:focus,
 .skin-lannister .header-nav li .dropdown-item.active:active {
-  color: #3B4350;
+  color: #3b4350;
   background-color: #ebebeb;
 }
 
@@ -21888,8 +21880,8 @@ button.toast-close-button {
 }
 
 .skin-lannister .tabs-component.tabs-default .tabs-component-tab.is-active {
-  border: 1px solid #3B4350;
-  background: #3B4350;
+  border: 1px solid #3b4350;
+  background: #3b4350;
   color: #fff;
 }
 
@@ -21898,15 +21890,15 @@ button.toast-close-button {
 }
 
 .skin-lannister .tabs-component.tabs-default .tabs-component-tab:hover {
-  border: 1px solid #3B4350;
+  border: 1px solid #3b4350;
 }
 
 .skin-lannister .tabs-component.tabs-default .tabs-component-panels {
-  border-top: 1px solid #3B4350 !important;
+  border-top: 1px solid #3b4350 !important;
 }
 
 .skin-lannister .tabs-component.tabs-vertical .tabs-component-tabs {
-  border-right: 1px solid #3B4350 !important;
+  border-right: 1px solid #3b4350 !important;
 }
 
 .skin-lannister .tabs-component.tabs-vertical .tabs-component-tabs .tabs-component-tab a,
@@ -21915,7 +21907,7 @@ button.toast-close-button {
 }
 
 .skin-lannister .tabs-component.tabs-vertical .tabs-component-tabs .tabs-component-tab.is-active {
-  background: #3B4350;
+  background: #3b4350;
 }
 
 .skin-lannister .tabs-component.tabs-vertical .tabs-component-tabs .tabs-component-tab.is-active a {
@@ -21923,7 +21915,7 @@ button.toast-close-button {
 }
 
 .skin-lannister .tabs-component.tabs-vertical .tabs-component-tabs .tabs-component-tab:hover {
-  border: 1px solid #3B4350;
+  border: 1px solid #3b4350;
 }
 
 .skin-lannister .tabs-component.tabs-simple .tabs-component-tabs .tabs-component-tab a {
@@ -21936,7 +21928,7 @@ button.toast-close-button {
 }
 
 .skin-lannister .tabs-component.tabs-simple .tabs-component-tabs .tabs-component-tab.is-active {
-  border-bottom: 3px solid #3B4350;
+  border-bottom: 3px solid #3b4350;
   color: #fff;
 }
 
@@ -21957,24 +21949,24 @@ button.toast-close-button {
 }
 
 .skin-lannister .tabs-component.tabs-simple-vertical .tabs-component-tabs .tabs-component-tab.is-active {
-  border-right: 3px solid #3B4350;
-  color: #3B4350;
+  border-right: 3px solid #3b4350;
+  color: #3b4350;
 }
 
 .skin-lannister code,
 .skin-lannister .code {
   background-color: #f8f8f8;
-  color: #3B4350;
+  color: #3b4350;
 }
 
 .skin-lannister mark,
 .skin-lannister .mark {
-  background-color: #3B4350;
+  background-color: #3b4350;
   color: #fff;
 }
 
 .skin-lannister .todo-container {
-  background-color: #3B4350 !important;
+  background-color: #3b4350 !important;
   color: #fff !important;
 }
 
@@ -21983,7 +21975,7 @@ button.toast-close-button {
 }
 
 .skin-lannister .vue-dropzone .dz-preview .dz-details {
-  background-color: #3B4350 !important;
+  background-color: #3b4350 !important;
   color: #fff !important;
 }
 
@@ -22006,8 +21998,8 @@ button.toast-close-button {
 
 .skin-lannister .btn-theme {
   color: #fff;
-  background-color: #3B4350;
-  border-color: #3B4350;
+  background-color: #3b4350;
+  border-color: #3b4350;
   -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
   -ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -22029,8 +22021,8 @@ button.toast-close-button {
 .skin-lannister .btn-theme.disabled,
 .skin-lannister .btn-theme:disabled {
   color: #fff;
-  background-color: #3B4350;
-  border-color: #3B4350;
+  background-color: #3b4350;
+  border-color: #3b4350;
 }
 
 .skin-lannister .btn-theme:not(:disabled):not(.disabled):active,
@@ -22049,14 +22041,14 @@ button.toast-close-button {
 }
 
 .skin-lannister .btn-theme-outline {
-  color: #3B4350;
-  border-color: #3B4350;
+  color: #3b4350;
+  border-color: #3b4350;
 }
 
 .skin-lannister .btn-theme-outline:hover {
   color: #fff;
-  background-color: #3B4350;
-  border-color: #3B4350;
+  background-color: #3b4350;
+  border-color: #3b4350;
 }
 
 .skin-lannister .btn-theme-outline:focus,
@@ -22067,7 +22059,7 @@ button.toast-close-button {
 
 .skin-lannister .btn-theme-outline.disabled,
 .skin-lannister .btn-theme-outline:disabled {
-  color: #3B4350;
+  color: #3b4350;
   background-color: transparent;
 }
 
@@ -22075,8 +22067,8 @@ button.toast-close-button {
 .skin-lannister .btn-theme-outline:not(:disabled):not(.disabled).active,
 .show > .skin-lannister .btn-theme-outline.dropdown-toggle {
   color: #fff;
-  background-color: #3B4350;
-  border-color: #3B4350;
+  background-color: #3b4350;
+  border-color: #3b4350;
 }
 
 .skin-lannister .btn-theme-outline:not(:disabled):not(.disabled):active:focus,
@@ -22087,11 +22079,11 @@ button.toast-close-button {
 }
 
 .skin-lannister .form-control:focus {
-  border: 1px solid #3B4350;
+  border: 1px solid #3b4350;
 }
 
 .skin-lannister .multiselect .multiselect__option--highlight {
-  background: #3B4350;
+  background: #3b4350;
   color: #fff;
 }
 
@@ -22115,12 +22107,12 @@ button.toast-close-button {
 }
 
 .skin-lannister .multiselect .multiselect__tags-wrap .multiselect__tag {
-  background: #3B4350;
+  background: #3b4350;
   color: #fff;
 }
 
 .skin-lannister .multiselect .multiselect__tags-wrap .multiselect__tag .multiselect__tag-icon:hover {
-  background: #3B4350;
+  background: #3b4350;
 }
 
 .skin-lannister .multiselect .multiselect__tags-wrap .multiselect__tag .multiselect__tag-icon::after {
@@ -22193,12 +22185,12 @@ button.toast-close-button {
 .skin-lannister .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).day:hover,
 .skin-lannister .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month:hover,
 .skin-lannister .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year:hover {
-  border: 1px solid #3B4350 !important;
+  border: 1px solid #3b4350 !important;
 }
 
 .skin-lannister .vdp-datepicker__calendar .cell.selected {
   color: #fff;
-  background: #3B4350 !important;
+  background: #3b4350 !important;
 }
 
 .skin-lannister .vdp-datepicker__calendar .cell.highlighted {
@@ -22211,7 +22203,7 @@ button.toast-close-button {
 }
 
 .skin-lannister .VueCarousel-dot.VueCarousel-dot--active .VueCarousel-dot-button {
-  background: #3B4350 !important;
+  background: #3b4350 !important;
 }
 
 .skin-lannister .mailbox .mailbox-content .table tr td .content-subject {
@@ -22223,13 +22215,13 @@ button.toast-close-button {
 }
 
 .skin-lannister .mailbox .mailbox-content .mailbox-content-footer .active .page-link {
-  background-color: #3B4350;
-  border-color: #3B4350;
+  background-color: #3b4350;
+  border-color: #3b4350;
   color: #fff;
 }
 
 .skin-lannister .mailbox .mailbox-content .btn-favorite .active {
-  color: #3B4350;
+  color: #3b4350;
 }
 
 .skin-lannister .mailbox-modal .mail-body .message-heading.email a {
@@ -22237,7 +22229,7 @@ button.toast-close-button {
 }
 
 .skin-lannister .mailbox .mailbox-sidebar .sidebar-menu li.active {
-  border-left: 5px solid #3B4350;
+  border-left: 5px solid #3b4350;
 }
 
 .skin-lannister .mailbox .mailbox-sidebar .sidebar-menu li a {
@@ -22261,7 +22253,7 @@ button.toast-close-button {
 }
 
 .skin-stark .site-header .nav-toggle {
-  background-color: #393F46;
+  background-color: #393f46;
   color: #fff;
 }
 
@@ -22275,17 +22267,15 @@ button.toast-close-button {
 }
 
 .skin-stark .site-header .action-list li a {
-  background-color: #393F46;
   color: #fff;
 }
 
 .skin-stark .site-header .action-list li a:hover {
-  background-color: #505862;
   color: #fff;
 }
 
 .skin-stark .site-header .dropdown-menu {
-  background-color: #393F46;
+  background-color: #393f46;
 }
 
 .skin-stark .site-header .notification-dropdown .dropdown-header {
@@ -22306,7 +22296,7 @@ button.toast-close-button {
 }
 
 .skin-stark .sidebar-left {
-  background-color: #393F46;
+  background-color: #393f46;
 }
 
 .skin-stark .side-nav .collapse-group .collapse-group-item a {
@@ -22340,7 +22330,7 @@ button.toast-close-button {
 }
 
 .skin-stark .header-bottom {
-  background-color: #393F46;
+  background-color: #393f46;
 }
 
 .skin-stark .header-nav li a {
@@ -22383,8 +22373,8 @@ button.toast-close-button {
 }
 
 .skin-stark .tabs-component.tabs-default .tabs-component-tab.is-active {
-  border: 1px solid #393F46;
-  background: #393F46;
+  border: 1px solid #393f46;
+  background: #393f46;
   color: #fff;
 }
 
@@ -22393,15 +22383,15 @@ button.toast-close-button {
 }
 
 .skin-stark .tabs-component.tabs-default .tabs-component-tab:hover {
-  border: 1px solid #393F46;
+  border: 1px solid #393f46;
 }
 
 .skin-stark .tabs-component.tabs-default .tabs-component-panels {
-  border-top: 1px solid #393F46 !important;
+  border-top: 1px solid #393f46 !important;
 }
 
 .skin-stark .tabs-component.tabs-vertical .tabs-component-tabs {
-  border-right: 1px solid #393F46 !important;
+  border-right: 1px solid #393f46 !important;
 }
 
 .skin-stark .tabs-component.tabs-vertical .tabs-component-tabs .tabs-component-tab a,
@@ -22410,7 +22400,7 @@ button.toast-close-button {
 }
 
 .skin-stark .tabs-component.tabs-vertical .tabs-component-tabs .tabs-component-tab.is-active {
-  background: #393F46;
+  background: #393f46;
 }
 
 .skin-stark .tabs-component.tabs-vertical .tabs-component-tabs .tabs-component-tab.is-active a {
@@ -22418,7 +22408,7 @@ button.toast-close-button {
 }
 
 .skin-stark .tabs-component.tabs-vertical .tabs-component-tabs .tabs-component-tab:hover {
-  border: 1px solid #393F46;
+  border: 1px solid #393f46;
 }
 
 .skin-stark .tabs-component.tabs-simple .tabs-component-tabs .tabs-component-tab a {
@@ -22431,7 +22421,7 @@ button.toast-close-button {
 }
 
 .skin-stark .tabs-component.tabs-simple .tabs-component-tabs .tabs-component-tab.is-active {
-  border-bottom: 3px solid #393F46;
+  border-bottom: 3px solid #393f46;
   color: #fff;
 }
 
@@ -22452,24 +22442,24 @@ button.toast-close-button {
 }
 
 .skin-stark .tabs-component.tabs-simple-vertical .tabs-component-tabs .tabs-component-tab.is-active {
-  border-right: 3px solid #393F46;
-  color: #393F46;
+  border-right: 3px solid #393f46;
+  color: #393f46;
 }
 
 .skin-stark code,
 .skin-stark .code {
   background-color: #f8f8f8;
-  color: #393F46;
+  color: #393f46;
 }
 
 .skin-stark mark,
 .skin-stark .mark {
-  background-color: #393F46;
+  background-color: #393f46;
   color: #fff;
 }
 
 .skin-stark .todo-container {
-  background-color: #393F46 !important;
+  background-color: #393f46 !important;
   color: #fff !important;
 }
 
@@ -22478,7 +22468,7 @@ button.toast-close-button {
 }
 
 .skin-stark .vue-dropzone .dz-preview .dz-details {
-  background-color: #393F46 !important;
+  background-color: #393f46 !important;
   color: #fff !important;
 }
 
@@ -22517,7 +22507,7 @@ button.toast-close-button {
 
 .skin-stark .dropdown-group .dropdown-container {
   color: #c7cbd1;
-  background-color: #393F46;
+  background-color: #393f46;
   border: 1px solid #22262a;
 }
 
@@ -22551,8 +22541,8 @@ button.toast-close-button {
 
 .skin-stark .btn-theme {
   color: #fff;
-  background-color: #393F46;
-  border-color: #393F46;
+  background-color: #393f46;
+  border-color: #393f46;
   -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
   -ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -22574,8 +22564,8 @@ button.toast-close-button {
 .skin-stark .btn-theme.disabled,
 .skin-stark .btn-theme:disabled {
   color: #fff;
-  background-color: #393F46;
-  border-color: #393F46;
+  background-color: #393f46;
+  border-color: #393f46;
 }
 
 .skin-stark .btn-theme:not(:disabled):not(.disabled):active,
@@ -22594,14 +22584,14 @@ button.toast-close-button {
 }
 
 .skin-stark .btn-theme-outline {
-  color: #393F46;
-  border-color: #393F46;
+  color: #393f46;
+  border-color: #393f46;
 }
 
 .skin-stark .btn-theme-outline:hover {
   color: #fff;
-  background-color: #393F46;
-  border-color: #393F46;
+  background-color: #393f46;
+  border-color: #393f46;
 }
 
 .skin-stark .btn-theme-outline:focus,
@@ -22612,7 +22602,7 @@ button.toast-close-button {
 
 .skin-stark .btn-theme-outline.disabled,
 .skin-stark .btn-theme-outline:disabled {
-  color: #393F46;
+  color: #393f46;
   background-color: transparent;
 }
 
@@ -22620,8 +22610,8 @@ button.toast-close-button {
 .skin-stark .btn-theme-outline:not(:disabled):not(.disabled).active,
 .show > .skin-stark .btn-theme-outline.dropdown-toggle {
   color: #fff;
-  background-color: #393F46;
-  border-color: #393F46;
+  background-color: #393f46;
+  border-color: #393f46;
 }
 
 .skin-stark .btn-theme-outline:not(:disabled):not(.disabled):active:focus,
@@ -22632,11 +22622,11 @@ button.toast-close-button {
 }
 
 .skin-stark .form-control:focus {
-  border: 1px solid #393F46;
+  border: 1px solid #393f46;
 }
 
 .skin-stark .multiselect .multiselect__option--highlight {
-  background: #393F46;
+  background: #393f46;
   color: #fff;
 }
 
@@ -22660,12 +22650,12 @@ button.toast-close-button {
 }
 
 .skin-stark .multiselect .multiselect__tags-wrap .multiselect__tag {
-  background: #393F46;
+  background: #393f46;
   color: #fff;
 }
 
 .skin-stark .multiselect .multiselect__tags-wrap .multiselect__tag .multiselect__tag-icon:hover {
-  background: #393F46;
+  background: #393f46;
 }
 
 .skin-stark .multiselect .multiselect__tags-wrap .multiselect__tag .multiselect__tag-icon::after {
@@ -22675,12 +22665,12 @@ button.toast-close-button {
 .skin-stark .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).day:hover,
 .skin-stark .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month:hover,
 .skin-stark .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year:hover {
-  border: 1px solid #393F46 !important;
+  border: 1px solid #393f46 !important;
 }
 
 .skin-stark .vdp-datepicker__calendar .cell.selected {
   color: #fff;
-  background: #393F46 !important;
+  background: #393f46 !important;
 }
 
 .skin-stark .vdp-datepicker__calendar .cell.highlighted {
@@ -22693,7 +22683,7 @@ button.toast-close-button {
 }
 
 .skin-stark .VueCarousel-dot.VueCarousel-dot--active .VueCarousel-dot-button {
-  background: #393F46 !important;
+  background: #393f46 !important;
 }
 
 .skin-stark .mailbox .mailbox-content .table tr td .content-subject {
@@ -22705,13 +22695,13 @@ button.toast-close-button {
 }
 
 .skin-stark .mailbox .mailbox-content .mailbox-content-footer .active .page-link {
-  background-color: #393F46;
-  border-color: #393F46;
+  background-color: #393f46;
+  border-color: #393f46;
   color: #fff;
 }
 
 .skin-stark .mailbox .mailbox-content .btn-favorite .active {
-  color: #393F46;
+  color: #393f46;
 }
 
 .skin-stark .mailbox-modal .mail-body .message-heading.email a {
@@ -22719,7 +22709,7 @@ button.toast-close-button {
 }
 
 .skin-stark .mailbox .mailbox-sidebar .sidebar-menu li.active {
-  border-left: 5px solid #393F46;
+  border-left: 5px solid #393f46;
 }
 
 .skin-stark .mailbox .mailbox-sidebar .sidebar-menu li a {
@@ -22811,10 +22801,10 @@ code,
   background: #333;
   height: 100%;
   left: 0;
-  padding: 60px 0 10px;
+  padding: 60px 0 80px;
   position: fixed;
   top: 0;
-  width: 240px;
+  width: 300px;
   z-index: 30;
 }
 
@@ -23144,7 +23134,6 @@ code,
 }
 
 .action-list li a {
-  background-color: #333;
   border-radius: 2px;
   color: #fff;
   display: inline-block;
@@ -23154,7 +23143,6 @@ code,
 }
 
 .action-list li a:hover {
-  background-color: #404040;
   color: #fff;
 }
 
@@ -23217,6 +23205,11 @@ code,
   padding: 0;
 }
 
+.side-nav .profile-logo {
+  height: 150px;
+  width: 150px;
+}
+
 .side-nav .collapse-group .collapse-group-item .collapse-item-title {
   display: block;
 }
@@ -23227,7 +23220,7 @@ code,
 }
 
 .side-nav .collapse-group .collapse-group-item .collapse-item-title > a > .icon-fa.arrow:before {
-  content: "\F104";
+  content: '\F104';
 }
 
 .side-nav .collapse-group .collapse-group-item a {
@@ -23252,7 +23245,7 @@ code,
 }
 
 .side-nav .collapse-group .collapse-group-item.active > .collapse-item-title > a > .icon-fa.arrow:before {
-  content: "\F107";
+  content: '\F107';
 }
 
 .side-nav .collapse-group .collapse-group-item .collapse-group-items {

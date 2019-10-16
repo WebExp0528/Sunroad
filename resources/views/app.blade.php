@@ -27,7 +27,7 @@
     <meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#333333">
 </head>
-<body class="layout-default skin-tyrell">
+<body class="layout-default skin-targaryen">
 <div id="app" class="site-wrapper">
     <div class="mobile-menu-overlay" @click.prevent="$utils.toggleSidebar"></div>
     <transition name="fade" mode="out-in">

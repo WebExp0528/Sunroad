@@ -70,9 +70,6 @@ import MailboxApp from './views/admin/apps/mailbox/MailboxApp.vue';
 import Users from './views/admin/users/Users.vue';
 import Profile from './views/admin/users/Profile.vue';
 
-// Settings
-import Settings from './views/admin/Settings.vue';
-
 /*
  |--------------------------------------------------------------------------
  | Other
@@ -96,6 +93,17 @@ import About from './views/front/About.vue';
 import Terms from './views/front/Terms.vue';
 import Contact from './views/front/Contacts.vue';
 import Privacy from './views/front/Privacy.vue';
+
+/*
+ |--------------------------------------------------------------------------
+ | Page Views
+ |--------------------------------------------------------------------------|
+ */
+
+import Discover from './views/pages/discover.vue';
+import Settings from './views/pages/settings.vue';
+import Messages from './views/pages/messages.vue';
+import Friends from './views/pages/friends.vue';
 
 Vue.use(VueRouter);
 
@@ -144,6 +152,26 @@ const routes = [
         path: '/',
         component: Home,
         name: 'home'
+      },
+      {
+        path: '/messages',
+        component: Messages,
+        name: 'messages'
+      },
+      {
+        path: '/discover',
+        component: Discover,
+        name: 'discover'
+      },
+      {
+        path: '/friends',
+        component: Friends,
+        name: 'friends'
+      },
+      {
+        path: '/settings',
+        component: Settings,
+        name: 'settings'
       }
     ]
   },

@@ -36,7 +36,7 @@
     }
 
     a {
-      background-color: $header-buttons-bg-color;
+      // background-color: $header-buttons-bg-color;
       border-radius: 2px;
       color: $header-buttons-font-color;
       display: inline-block;
@@ -46,7 +46,7 @@
     }
 
     a:hover {
-      background-color: $header-buttons-bg-color--hover;
+      // background-color: $header-buttons-bg-color--hover;
       color: $header-font-color;
     }
   }
