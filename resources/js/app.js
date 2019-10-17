@@ -3,13 +3,13 @@
  * include Vue and Vue Resource. This gives a great starting point for
  * building robust, powerful web applications using Vue and Laravel.
  */
-import router from './router.js'
-import utils from './helpers/utilities'
-import ThemeSwitcher from './components/ThemeSwitcher'
+import router from './router.js';
+import utils from './helpers/utilities';
+import ThemeSwitcher from './components/ThemeSwitcher';
 
-require('./bootstrap')
+require('./bootstrap');
 
-Vue.prototype.$utils = utils
+Vue.prototype.$utils = utils;
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -17,10 +17,5 @@ Vue.prototype.$utils = utils
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 const app = new Vue({
-  router,
-
-  // Theme Swiching Demo Component (You can remove it if not required)
-  components: {
-    ThemeSwitcher
-  }
-}).$mount('#app')
+  router
+}).$mount('#app');

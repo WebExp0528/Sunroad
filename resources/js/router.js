@@ -88,7 +88,7 @@ import NotFoundPage from './views/errors/404.vue';
  |--------------------------------------------------------------------------|
  */
 
-import Home from './views/front/Home.vue';
+import Home from './views/pages/Home.vue';
 import About from './views/front/About.vue';
 import Terms from './views/front/Terms.vue';
 import Contact from './views/front/Contacts.vue';

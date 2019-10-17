@@ -61,8 +61,13 @@
 
 .layout-default .main-content,
 .layout-icon-sidebar .main-content {
-  padding: 90px 15px 10px 255px;
+  padding: 90px 15px 85px 305px;
   min-height: calc(100% - 39px);
+
+  .post-avatar {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .site-footer {

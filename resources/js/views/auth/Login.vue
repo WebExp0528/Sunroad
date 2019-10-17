@@ -45,8 +45,8 @@
         <ul class="list-inline social-connect">
         </ul>
         <div class="problem-login">
-            <div class="pull-left">Don't have an account yet?<router-link to="/register"  class="text-info"> Get started</router-link></div>
-            <div class="pull-right"><router-link to="/forget-password"  class="text-info">Forgot password?</router-link></div>
+            <div class="pull-left">Don't have an account yet?<router-link to="/register"  class="text-success"> Get started</router-link></div>
+            <div class="pull-right"><router-link to="/forget-password"  class="text-success">Forgot password?</router-link></div>
             <div class="clearfix"></div>
         </div>
       </div>

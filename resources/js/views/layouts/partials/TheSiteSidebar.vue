@@ -7,12 +7,13 @@
                 <div class="card border-success mb-0">
                     <div class="card-header">
                         <div class="d-flex justify-content-center" style="background-image:">
-                            <img :src="user.photoURL || '/assets/img/default.png'" alt="No photo" class="rounded-circle img-thumbnail profile-logo">
+                          <img v-if="user.photoURL" v-bind:src="'/user/avatar/'+user.photoURL" class="profile-logo rounded-circle img-thumbnail mr-2"/>
+                          <img v-else src="/assets/img/default.png" class="img-thumbnail profile-logo rounded-circle mr-2"/>
                         </div>
                     </div>
                     <div class="card-body text-success">
-                        <h5 class="card-title">{{user.displayName}}</h5>
-                        <p class="card-text">{{user.email}}</p>
+                        <h5 class="card-title text-center">{{user.displayName}}</h5>
+                        <p class="card-text text-center">{{user.email}}</p>
                     </div>
                 </div>
                 <div class="card border-success mb-0">

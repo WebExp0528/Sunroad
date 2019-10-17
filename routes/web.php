@@ -3,10 +3,6 @@
 use Cmgmyr\Messenger\Models\Message;
 use Intervention\Image\Facades\Image;
 
-Route::get('/{vue?}', function () {
-    return view('app');
-})->where('vue', '[\/\w\.-]*')->name('home');
-
 // Route::get('/{any}', function () {
 //     return view('app');
 // })->where('any', '.*');
@@ -128,3 +124,8 @@ Route::get('album/{filename}', function ($filename) {
 Route::get('wallpaper/{filename}', function ($filename) {
     return Image::make(storage_path().'/uploads/wallpapers/'.$filename)->response();
 });
+
+
+Route::get('/{vue?}', function () {
+    return view('app');
+})->where('vue', '[\/\w\.-]*')->name('home');

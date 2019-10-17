@@ -20307,7 +20307,7 @@ button.toast-close-button {
 /* '' */
 
 .skin-tyrell .site-header {
-  background-color: #4fc47f;
+  background-color: #fff;
   border-bottom: 1px solid rgba(230, 230, 230, 0.7);
 }
 
@@ -22849,8 +22849,14 @@ code,
 
 .layout-default .main-content,
 .layout-icon-sidebar .main-content {
-  padding: 90px 15px 10px 255px;
+  padding: 90px 15px 85px 305px;
   min-height: calc(100% - 39px);
+}
+
+.layout-default .main-content .post-avatar,
+.layout-icon-sidebar .main-content .post-avatar {
+  width: 40px;
+  height: 40px;
 }
 
 .site-footer {
@@ -23505,6 +23511,7 @@ code,
 .card .card-header .actions {
   float: right;
   margin: auto;
+  padding: 8px 0px;
 }
 
 .card .section-semi-title {

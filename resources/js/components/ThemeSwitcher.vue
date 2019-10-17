@@ -27,7 +27,7 @@ export default {
   data () {
     return {
       isOpen: false,
-      selectedSkin: 'targaryen',
+      selectedSkin: 'tyrell',
       skins: [
         {title: 'Skin - Default', 'slug': 'default', 'img': '/assets/img/skins/skin-default.png', 'light': false},
         {title: 'Skin - Tyrell', 'slug': 'tyrell', 'img': '/assets/img/skins/skin-tyrell.png', 'light': true},

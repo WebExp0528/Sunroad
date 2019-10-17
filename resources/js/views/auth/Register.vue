@@ -113,7 +113,7 @@
         <ul class="list-inline social-connect">
         </ul>
         <div class="problem-login">
-            <div class="pull-right">Already have an account?<router-link to="/login" class="text-info"> Login</router-link></div>
+            <div class="pull-right">Already have an account?<router-link to="/login" class="text-success"> Login</router-link></div>
             <div class="clearfix"></div>
         </div>
       </div>

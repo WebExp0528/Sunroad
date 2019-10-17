@@ -30,6 +30,8 @@ use Intervention\Image\Facades\Image;
 use Illuminate\Support\Facades\Storage;
 use SebastianBergmann\Environment\Console;
 
+use JWTAuth;
+use Tymon\JWTAuth\Exceptions\JWTException;
 /**
  * Class PostsAPIController.
  */
@@ -43,13 +45,52 @@ class PostsAPIController extends AppBaseController
         $this->userRepository = $userRepo;
     }
 
+    /**
+     * API for getting all posts
+     */
     public function getPosts(Request $request)
     {
+        $user = JWTAuth::user();
         $page = $request->query('page');
-        $posts = Post::where('user_id', $user_id)->orderBy('created_at', 'desc')->paginate(Setting::get('items_page'));
-        
-        return response()->json(['status' => '200', 'postsInfo' => $postsInfo, 'lastPage' => $lastPage]);
-        
-        return response()->json(['page' => $name]);
+        $pageNum = (int)$page;
+        $query = 'SELECT posts.id, posts.isnew, posts.content, posts.youtubeURL,posts.bandcamURL, posts.photoURL, posts.audioURL, posts.type, posts.created_at, posts.user_id, posts.hide, users.photoURL as poster_photo, users.displayName as poster, post_likes.count as likes, comments.count as comments, liked.user_id as liked FROM `posts` LEFT JOIN users on posts.user_id=users.id left join (SELECT count(*) as count, post_likes.post_id from post_likes GROUP by post_likes.post_id) as post_likes on post_likes.post_id=posts.id left join (SELECT count(*) as count, comments.post_id from comments GROUP by comments.post_id) as comments on comments.post_id=posts.id left join (SELECT * from post_likes where post_likes.user_id='.$user->id.') as liked on liked.post_id=posts.id ORDER by posts.created_at DESC LIMIT 10 OFFSET '.$pageNum*10;
+
+        $posts = DB::select( DB::raw($query) );
+        $lastPage = DB::table('posts')->paginate(10)->lastpage();
+        return response()->json(['posts' => $posts, 'lastPage'=>$lastPage]);
+    }
+    
+    /**
+     * API for adding like or unlike
+     */
+    public function addPostLike(Request $request)
+    {
+        $user = JWTAuth::user();
+        $post_id = $request->post_id;
+        $liked = DB::table('post_likes')->where([
+            'user_id' => $user->id,
+            'post_id' => $post_id,
+        ])->first();
+
+        $islike = false;
+        if($liked){
+            DB::table('post_likes')->where(['user_id' => $user->id,'post_id' => $post_id])->delete();
+        }else{
+            DB::table('post_likes')->insert(['post_id' => $post_id, 'user_id'=>$user->id, 'created_at'=>Carbon::now(), 'updated_at'=>Carbon::now()]);
+            $islike = true;
+        }
+        return response()->json(['isLike'=>$islike], 200);
+    }
+
+    /**
+     * API for adding Comments
+     */
+    public function addPostComment(Request $request)
+    {
+        $user = JWTAuth::user();
+        $post_id = $request->post_id;
+        $description = $request->description;
+        DB::table('comments')->insert(['post_id' => $post_id, 'user_id'=>$user->id, 'description'=>$description, 'created_at'=>Carbon::now(), 'updated_at'=>Carbon::now()]);
+        return response()->json(['message'=>'success'], 200);
     }
 }
