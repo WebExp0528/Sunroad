@@ -57,7 +57,7 @@ class PostsAPIController extends AppBaseController
 
         $posts = DB::select( DB::raw($query) );
         $lastPage = DB::table('posts')->paginate(10)->lastpage();
-        return response()->json(['posts' => $posts, 'lastPage'=>$lastPage]);
+        return response()->json(['posts' => $posts, 'lastPage'=>$lastPage, 'user'=>$user]);
     }
     
     /**
@@ -72,12 +72,12 @@ class PostsAPIController extends AppBaseController
             'post_id' => $post_id,
         ])->first();
 
-        $islike = false;
+        $islike = 0;
         if($liked){
             DB::table('post_likes')->where(['user_id' => $user->id,'post_id' => $post_id])->delete();
         }else{
             DB::table('post_likes')->insert(['post_id' => $post_id, 'user_id'=>$user->id, 'created_at'=>Carbon::now(), 'updated_at'=>Carbon::now()]);
-            $islike = true;
+            $islike = 1;
         }
         return response()->json(['isLike'=>$islike], 200);
     }
@@ -92,5 +92,16 @@ class PostsAPIController extends AppBaseController
         $description = $request->description;
         DB::table('comments')->insert(['post_id' => $post_id, 'user_id'=>$user->id, 'description'=>$description, 'created_at'=>Carbon::now(), 'updated_at'=>Carbon::now()]);
         return response()->json(['message'=>'success'], 200);
+    }
+
+    /**
+     * API for getting Comments for post
+     */
+    public function getCommentsforPost(Request $request)
+    {
+        $post_id = $request->post_id;
+        $query = 'SELECT comments.*, users.displayName as commenter_name, users.photoURL as commenter_photo from comments left join users on users.id=comments.user_id where comments.post_id='.$post_id.' order by comments.created_at desc';
+        $comments = DB::select( DB::raw($query) );
+        return response()->json(['comments'=>$comments], 200);
     }
 }

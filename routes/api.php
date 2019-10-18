@@ -108,4 +108,5 @@ Route::group(['prefix'=>'posts', 'middleware' => 'jwt.verify'], function (){
     Route::get('/get-posts',  'PostsAPIController@getPosts');
     Route::post('/add-post-like',  'PostsAPIController@addPostLike');
     Route::post('/add-post-comment',  'PostsAPIController@addPostComment');
+    Route::post('/get-comments-post',  'PostsAPIController@getCommentsforPost');
 });

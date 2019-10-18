@@ -149,3 +149,25 @@
     padding-left: 15px;
   }
 }
+
+.fake-link:hover {
+  color: #4fc47f;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.icon-dig-md {
+  height: 25px;
+}
+
+.icon-comment-md {
+  height: 25px;
+}
+
+.icon-dig-sm {
+  height: 20px;
+}
+
+.icon-comment-sm {
+  height: 20px;
+}
