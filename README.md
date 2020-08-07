@@ -1,1 +1,1 @@
-# startpeeps-laravel
+# This is Laravel + Vue.js project
